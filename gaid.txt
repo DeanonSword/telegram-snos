@@ -1,0 +1,5 @@
+open mail.txt
+
+mail:password
+
+run main.py
