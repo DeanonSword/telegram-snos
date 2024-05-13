@@ -44,7 +44,7 @@ _+_+_+_+_+_+_+_+_+_+_+_+_+_+_+_+_+_+_+_+_+_
 правила использования:
 [+] все жалобы должны быть не за просто так 
 [+] писать желательно на английском 
-[+] жалобы только по фактам иначе тг вам нахуй пошлет
+[+] жалобы только по фактам иначе тг вас нахуй пошлет
 [+] пример отправки письма в файле README.TXT
 _+_+_+_+_+_+_+_+_+_+_+_+_+_+_+_+_+_+_+_+_+_
 если заметили не доработку или ошибку, то пишите :
@@ -57,7 +57,7 @@ _+_+_+_+_+_+_+_+_+_+_+_+_+_+_+_+_+_+_+_+_+_
 
 
 if __name__ == "__main__": 
-    recipients = ["abuse@telegram.org", "Spam@telegram.org"]
+    recipients = ["abuse@telegram.org", "DMCA@telegram.org"]
     senders = []
     
     with open("mail.txt", "r") as file:
@@ -67,7 +67,7 @@ if __name__ == "__main__":
             senders.append((email, password))
 
     print(logo)
-    subject = str(input("[AC] название письма > "))
+    subject = str(input("[AC] тема письма > "))
     messagetext = str(input("[AC] текст письма > "))
 
     
@@ -76,4 +76,4 @@ if __name__ == "__main__":
             sendemail(senderemail, senderpassword, recipientemail, subject, messagetext)
             for _ in tqdm(range(100)):
                 pass
-            time.sleep(300);
+            time.sleep(185);
